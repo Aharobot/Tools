@@ -29,41 +29,41 @@ Requirement
 How to build X3DParser
 ======================
 * Windows
-1. Open Visual Studio Command Prompt
-2. Move to the directory X3DParser in SgvX3DLib.
-3. Execute the following command:
+ 1. Open Visual Studio Command Prompt
+ 2. Move to the directory X3DParser in SgvX3DLib.
+ 3. Execute the following command:
 
     nmake -f makefile.msc
 
-4. You will find the Jar file X3DParser.jar in the current
-   directory.
+ 4. You will find the Jar file X3DParser.jar in the current
+    directory.
 
 * Linux
-2. Move to the directory X3DParser in SgvX3DLib.
-3. Execute the following command:
+ 1. Move to the directory X3DParser in SgvX3DLib.
+ 2. Execute the following command:
 
     make
 
-4. You will find the Jar file X3DParser.jar in the current
-   directory.
+ 3. You will find the Jar file X3DParser.jar in the current
+    directory.
 
 
 How to build libSgvX3D
 ======================
 * Windows
-1. Open SgvX3D.sln
-2. Choose teh build type Release or Debug and click
-   Build -> Build Solution
-3. You will find libSgvX3D.lib in the Release/Debug
-   directory.
+ 1. Open SgvX3D.sln
+ 2. Choose teh build type Release or Debug and click
+    Build -> Build Solution
+ 3. You will find libSgvX3D.lib in the Release/Debug
+    directory.
 
 * Linux
-1. Check makefile in the directory SgvX3DLib/libSgvX3D and
-   make sure setting of variables JDKDIR, JVMDIR and
-   JDKINC are correct on your system.
-2. Just execute make in the SgvX3DLib directory.
-3. You will find libSgvX3D.so in the directory
-   SgvX3DLib/libSgvX3D.
+ 1. Check makefile in the directory SgvX3DLib/libSgvX3D and
+    make sure setting of variables JDKDIR, JVMDIR and
+    JDKINC are correct on your system.
+ 2. Just execute make in the SgvX3DLib directory.
+ 3. You will find libSgvX3D.so in the directory
+    SgvX3DLib/libSgvX3D.
 
 
 Test run (optional)

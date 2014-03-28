@@ -1,0 +1,10 @@
+Windows:
+Execute the following command within "Visual Studio Command Prompt"
+
+    nmake -f makefile.msc
+
+Unix and Unix like OS:
+Execute the following command.
+
+    make
+

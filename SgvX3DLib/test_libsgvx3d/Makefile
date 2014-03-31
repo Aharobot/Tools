@@ -1,7 +1,4 @@
-
 X3DPARSERDIR = ../libSgvX3D
-JDKDIR = /usr/lib/jvm/java-6-openjdk-amd64
-JVMDIR = $(JDKDIR)/jre/lib/amd64/server
 JDKINC = -I$(JDKDIR)/include -I$(JDKDIR)/include/linux
 
 RM       = rm -f

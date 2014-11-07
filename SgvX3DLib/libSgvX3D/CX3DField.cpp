@@ -380,7 +380,8 @@ void MFVec2f::setValue(CVRMLFieldData *data)
 	CVRMLFloatArrayData *a = (CVRMLFloatArrayData *)data;
 
 	float x, y;
-	x = y = 0.0f;
+	x = 0.0f;
+	y = 0.0f;
 
 	m_values.clear();
 	for (int i=0; i<a->count(); i++)
@@ -399,7 +400,8 @@ void MFVec2f::setValue(CVRMLFieldData *data)
 			vec.setValue(x, y);
 			m_values.push_back(vec);
 
-			x = y = 0.0f;
+			x = 0.0f;
+			y = 0.0f;
 			break;
 		}
 	}
@@ -413,7 +415,9 @@ void MFVec3f::setValue(CVRMLFieldData *data)
 	CVRMLFloatArrayData *a = (CVRMLFloatArrayData *)data;
 
 	float x, y, z;
-	x = y = z = 0.0f;
+	x = 0.0f;
+	y = 0.0f;
+	z = 0.0f;
 
 	m_values.clear();
 	for (int i=0; i<a->count(); i++)
@@ -435,7 +439,9 @@ void MFVec3f::setValue(CVRMLFieldData *data)
 			vec.setValue(x, y, z);
 			m_values.push_back(vec);
 
-			x = y = z = 0.0f;
+			x = 0.0f;
+			y = 0.0f;
+			z = 0.0f;
 			break;
 		}
 	}
@@ -449,7 +455,10 @@ void MFVec4f::setValue(CVRMLFieldData *data)
 	CVRMLFloatArrayData *a = (CVRMLFloatArrayData *)data;
 
 	float x, y, z, w;
-	x = y = z = w = 0.0f;
+	x = 0.0f;
+	y = 0.0f;
+	z = 0.0f;
+	w = 0.0f;
 
 	m_values.clear();
 	for (int i=0; i<a->count(); i++)
@@ -474,7 +483,7 @@ void MFVec4f::setValue(CVRMLFieldData *data)
 			vec.setValue(x, y, z, w);
 			m_values.push_back(vec);
 
-			x = y = z = w = 0.0f;
+			x = 0.0f; y = 0.0f; z = 0.0f; w = 0.0f;
 			break;
 		}
 	}
@@ -488,7 +497,7 @@ void MFVec2d::setValue(CVRMLFieldData *data)
 	CVRMLDoubleArrayData *a = (CVRMLDoubleArrayData *)data;
 
 	double x, y;
-	x = y = 0.0;
+	x = 0.0; y = 0.0;
 
 	m_values.clear();
 	for (int i=0; i<a->count(); i++)
@@ -507,7 +516,7 @@ void MFVec2d::setValue(CVRMLFieldData *data)
 			vec.setValue(x, y);
 			m_values.push_back(vec);
 
-			x = y = 0.0;
+			x = 0.0; y = 0.0;
 			break;
 		}
 	}
@@ -521,7 +530,9 @@ void MFVec3d::setValue(CVRMLFieldData *data)
 	CVRMLDoubleArrayData *a = (CVRMLDoubleArrayData *)data;
 
 	double x, y, z;
-	x = y = z = 0.0;
+	x = 0.0;
+	y = 0.0;
+	z = 0.0;
 
 	m_values.clear();
 	for (int i=0; i<a->count(); i++)
@@ -543,7 +554,7 @@ void MFVec3d::setValue(CVRMLFieldData *data)
 			vec.setValue(x, y, z);
 			m_values.push_back(vec);
 
-			x = y = z = 0.0;
+			x = 0.0; y = 0.0; z = 0.0;
 			break;
 		}
 	}
@@ -557,7 +568,7 @@ void MFVec4d::setValue(CVRMLFieldData *data)
 	CVRMLDoubleArrayData *a = (CVRMLDoubleArrayData *)data;
 
 	double x, y, z, w;
-	x = y = z = w = 0.0;
+	x = 0.0; y = 0.0; z = 0.0; w = 0.0;
 
 	m_values.clear();
 	for (int i=0; i<a->count(); i++)
@@ -582,7 +593,7 @@ void MFVec4d::setValue(CVRMLFieldData *data)
 			vec.setValue(x, y, z, w);
 			m_values.push_back(vec);
 
-			x = y = z = w = 0.0;
+			x = 0.0; y = 0.0; z = 0.0; w = 0.0;
 			break;
 		}
 	}
@@ -594,7 +605,9 @@ void MFColor::setValue(CVRMLFieldData *data)
 	if (data->getFieldType() != FLOAT_ARRAY_DATA) return;
 
 	float r, g, b;
-	r = g = b = 0.0f;
+	r = 0.0f;
+	g = 0.0f;
+	b = 0.0f;
 
 	m_values.clear();
 
@@ -619,7 +632,7 @@ void MFColor::setValue(CVRMLFieldData *data)
 
 			m_values.push_back(color);
 
-			r = g = b = 0.0f;
+			r = 0.0f; g = 0.0f; b = 0.0f;
 			break;
 		}
 	}
